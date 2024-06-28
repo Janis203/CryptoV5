@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Crypto List </title>
+</head>
+<body>
+<h1>Crypto List</h1>
+<ol>
+    {% for currency in data %}
+        <li>{{ currency.name }} ({{ currency.symbol }}) :${{ currency.price }}</li>
+    {% endfor %}
+</ol>
+</body>
+</html>
